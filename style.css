@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-principal {
+    background-color: #E8DCD1;
+    min-height: 100vh;
+    font-family: 'Libre Caslon Text', serif;
+}
+
+
+.img-background {
+    margin-top: -7%;
+    width: 100%;
+    height: 100%;
+}
+
+
+.cabecalho {
+    padding: 12px;
+    margin-top: 5px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8DCD1;
+}
+
+
+
+.linha {
+    margin-left: 400px;
+}
+
+
+.cabecalho a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    margin-left: 40px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
