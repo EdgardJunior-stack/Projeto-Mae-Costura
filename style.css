@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,6 +6,8 @@
 
 .main-principal {
     background-color: #E8DCD1;
+    position: relative;
+    z-index: 0;
     min-height: 100vh;
     font-family: 'Libre Caslon Text', serif;
 }
@@ -14,14 +16,16 @@
 .img-background {
     margin-top: -7%;
     width: 100%;
-    height: 100%;
+    height: auto;
+    position: relative;
+    z-index: -1;
 }
 
 
 .cabecalho {
     padding: 12px;
-    margin-top: 5px;
-    position: absolute;
+    width: 100%;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,4 +45,125 @@
     font-size: 18px;
     margin-left: 40px;
     font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+.cabecalho h1 {
+    font-size: 30px;
+    margin-right: 400px;
+    color: #5c3c33;
+    font-family: 'Libre Caslon Text', serif;
+}
+
+
+
+.button-contato {
+    margin-left: 40px;
+    width: 130px;
+    background-color: #E8DCD1;
+    color: #5c3c33;
+    border: 1px solid #5c3c33;
+    padding: 7px;
+    border-radius: 20px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+
+
+.caixa-texto {
+    margin-top: -30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    background-color: #fcfcfc;
+    width: 30vw;
+    height: 35vh;
+    margin-left: 60px;
+    border-radius: 20px;
+}
+
+
+.button-atendimento {
+    display: flex;
+    position: absolute;
+    margin: -140px 0px 100px -300px;
+    background-color: #f5e9dd;
+    color: #a56857;
+    border: none;
+    padding: 7px;
+    border-radius: 15px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.paragrafo-texto-1 {
+    display: flex;
+    position: absolute;
+    left: 103px;
+    height: 140px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #5c3c33;
+    font-family: 'Libre Caslon Text', serif;
+}
+
+
+
+.paragrafo-texto-2 {
+    display: flex;
+    position: absolute;
+    text-align: justify;
+    width: 470px;
+    left: 103px;
+    font-size: 17px;
+    color: #5c3c33;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+
+.button-orçamento {
+    display: flex;
+    position: absolute;
+    margin: 330px -100px 100px -300px;
+    background-color: #8b4d3b;
+    color: #fffbf6;
+    border: none;
+    padding: 13px;
+    border-radius: 20px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.button-whatsapp {
+    display: flex;
+    position: absolute;
+    margin: 330px -330px 100px -150px;
+    background-color: #f5e9dd;
+    color: #a56857;
+    border: 1px solid #a56857;
+    padding: 13px;
+    border-radius: 20px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
 }
