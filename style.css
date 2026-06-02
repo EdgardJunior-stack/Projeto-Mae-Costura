@@ -5,9 +5,9 @@
 }
 
 .main-principal {
-    background-color: #E8DCD1;
+    background-color: #f8f9fa;
     position: relative;
-    z-index: 0;
+    z-index: 1;
     min-height: 100vh;
     font-family: 'Libre Caslon Text', serif;
 }
@@ -18,7 +18,7 @@
     width: 100%;
     height: auto;
     position: relative;
-    z-index: -1;
+    z-index: 1;
 }
 
 
@@ -29,7 +29,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #E8DCD1;
+    background-color: #f8f9fa;
+    z-index: 2;
 }
 
 
@@ -60,7 +61,7 @@
 .button-contato {
     margin-left: 40px;
     width: 130px;
-    background-color: #E8DCD1;
+    background-color: #f5e9dd;
     color: #5c3c33;
     border: 1px solid #5c3c33;
     padding: 7px;
@@ -75,24 +76,26 @@
 
 
 .caixa-texto {
+    position: relative;
     margin-top: -30%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 70px;
-    background-color: #fcfcfc;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 30px 30px;
+    background-color: #f3f4f5;
     width: 30vw;
-    height: 35vh;
+    min-height: 35vh;
     margin-left: 60px;
     border-radius: 20px;
+    z-index: 1;
 }
 
 
 .button-atendimento {
-    display: flex;
     position: absolute;
-    margin: -140px 0px 100px -300px;
+    top: 30px;
+    left: 30px;
     background-color: #f5e9dd;
     color: #a56857;
     border: none;
@@ -105,10 +108,10 @@
 
 
 .paragrafo-texto-1 {
-    display: flex;
     position: absolute;
-    left: 103px;
-    height: 140px;
+    top: 80px;
+    left: 30px;
+    right: 30px;
     font-size: 18px;
     font-weight: bold;
     color: #5c3c33;
@@ -116,24 +119,22 @@
 }
 
 
-
 .paragrafo-texto-2 {
-    display: flex;
     position: absolute;
+    top: 140px;
+    left: 30px;
+    right: 30px;
     text-align: justify;
-    width: 470px;
-    left: 103px;
     font-size: 17px;
     color: #5c3c33;
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
 
-
 .button-orçamento {
-    display: flex;
     position: absolute;
-    margin: 330px -100px 100px -300px;
+    bottom: 30px;
+    left: 97px;
     background-color: #8b4d3b;
     color: #fffbf6;
     border: none;
@@ -143,27 +144,133 @@
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
+    z-index: 1;
 }
 
 
-
 .button-whatsapp {
-    display: flex;
     position: absolute;
-    margin: 330px -330px 100px -150px;
+    bottom: 30px;
+    right: 110px;
+    width: 130px;
     background-color: #f5e9dd;
-    color: #a56857;
-    border: 1px solid #a56857;
+    color: #5c3c33;
+    border: 1px solid #f59f87;
     padding: 13px;
-    border-radius: 20px;
+    border-radius: 22px;
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
+    z-index: 1;
 }
 
+
+.caixa-servicos {
+    margin-top: 285px;
+    margin-left: 750px;
+    width: 30vw;
+    min-height: 20vh;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+
 .container-2 {
-    display: flex;
-    justify-content: center;
-    margin-top: 20%;
+    margin-top: 100px;
+    padding: 50px;
+    position: relative;
+    background-color: #ebe8e8ec;
+}
+
+
+
+.container-2 h2 {
+    position: absolute;
+    margin-top: -200px;
+    left: 850px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+
+.paragrafo-servicos {
+    position: absolute;
+    margin-top: -150px;
+    left: 850px;
+    font-size: 17px;
+    color: #5c3c33;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+
+.container-2 p {
+    position: absolute;
+    left: 770px;
+    font-size: 17px;
+    color: #5c3c33;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+
+.caixa-ajustes {
+    margin-top: -200px;
+    margin-left: 20px;
+    width: 40vw;
+    height: 60vh;
+    min-height: 20vh;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #944a4aec;
+}
+
+
+
+.caixa-titulo {
+    background-color: #f8f9fa;
+    width: 40vw;
+    height: 15vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: -30px;
+    
+}
+
+
+
+.titulo-ajustes {
+    font-size: 23px;
+    margin-top: 400px;
+    font-weight: normal;
+    font-family: 'Libre Caslon Text', serif;
+}
+
+
+.paragrafo-ajuste {
+    font-size: 17px;
+    color: #5c3c33;
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin-top: -7px;
+    margin-left: -690px;
+}
+
+
+.caixa-bainha {
+    margin-top: 50px;
+    margin-left: 1000px;
+    width: 40vw;
+    height: 20vh;
+    min-height: 20vh;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #944a4aec;
+}
+
+.img-valquiria {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    margin-right: 50px;
 }
