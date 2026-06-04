@@ -180,7 +180,7 @@
     margin-top: 100px;
     padding: 50px;
     position: relative;
-    background-color: #ebe8e8ec;
+    background-color: #ebedf0;
 }
 
 
@@ -205,7 +205,7 @@
 
 
 
-.container-2 p {
+.caixa-servicos p {
     position: absolute;
     left: 770px;
     font-size: 17px;
@@ -222,55 +222,237 @@
     height: 60vh;
     min-height: 20vh;
     border-radius: 20px;
-    padding: 30px;
-    background-color: #944a4aec;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    perspective: 1200px;
 }
 
 
+.img-ajustes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 16vh);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    transform-origin: center center;
+    transition: transform 0.3s ease;
+    will-change: transform;
+    z-index: 1;
+}
+
+
+.img-ajustes:hover {
+    transform: translateZ(25px) scale(1.02);
+}
 
 .caixa-titulo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 16vh;
     background-color: #f8f9fa;
-    width: 40vw;
-    height: 15vh;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    margin-left: -30px;
-    
+    padding: 20px 30px;
+    box-sizing: border-box;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 
 
 .titulo-ajustes {
     font-size: 23px;
-    margin-top: 400px;
     font-weight: normal;
     font-family: 'Libre Caslon Text', serif;
+    margin: 0;
+}
+
+
+.icone-cabide {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: auto;
+    margin-top: -15px;
+    color: #5c3c33;
 }
 
 
 .paragrafo-ajuste {
+    margin-top: 10px;
     font-size: 17px;
     color: #5c3c33;
     font-family: 'Hanken Grotesk', sans-serif;
-    margin-top: -7px;
-    margin-left: -690px;
 }
+
 
 
 .caixa-bainha {
-    margin-top: 50px;
+    position: absolute;
+    margin-top: -552px;
     margin-left: 1000px;
-    width: 40vw;
-    height: 20vh;
+    width: 30vw;
+    height: 25vh;
     min-height: 20vh;
     border-radius: 20px;
     padding: 30px;
-    background-color: #944a4aec;
+    background-color: #f8f9fa;
 }
 
+
+.icone-tesoura {
+    width: 43px;
+    height: auto;
+    border-radius: none;
+    margin-right: 50px;
+    margin-left: 450px;
+    color: #5c3c33;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.titulo-bainha {
+    margin: 55px 0px;
+    font-size: 23px;
+    font-weight: normal;
+    font-family: 'Libre Caslon Text', serif;
+    margin-bottom: 10px;
+}
+
+
+.paragrafo-bainha {
+    margin-top: 10px;
+    font-size: 17px;
+    color: #5c3c33;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.caixa-sob-medida {
+    position: absolute;
+    margin-top: -242px;
+    margin-left: 1000px;
+    width: 30vw;
+    height: 25vh;
+    min-height: 20vh;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #f8f9fa;
+}
+
+
+.icone-regua {
+    width: 43px;
+    height: auto;
+    border-radius: none;
+    margin-right: 50px;
+    margin-left: 450px;
+    color: #5c3c33;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.titulo-sob-medida {
+    margin-top: 75px;
+    font-size: 23px;
+    font-weight: normal;
+    font-family: 'Libre Caslon Text', serif;
+    margin-bottom: 10px;
+}
+
+
+.paragrafo-sob-medida {
+    margin-top: 10px;
+    font-size: 17px;
+    color: #5c3c33;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+
+.container-3 {
+    display: flex;               /* posiciona filhos lado a lado */
+    gap: 30px;                  /* espaço entre as caixas */
+    padding: 50px;
+    margin-top: 0px;
+    justify-content: flex-start; /* alinha à esquerda */
+    align-items: center;         /* centraliza verticalmente junto com a imagem */
+    
+}
+
+.caixa-sobre {
+    
+    padding: 30px;
+    width: 60vw;
+    height: 44vh;
+    display: flex;
+    flex-direction: column;      /* empilha título e parágrafos */
+    justify-content: center;     /* desce o conteúdo para o centro vertical */
+    gap: 20px;
+    align-items: flex-start;     /* alinha texto à esquerda */
+    box-sizing: border-box;
+}
+
+
+.titulo-sobre {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 23px;
+    font-weight: normal;
+    color: #5c3c33;
+}
+
+
+.paragrafo-sobre {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 17px;
+    color: #5c3c33;
+    margin-top: 10px;            /* espaçamento entre parágrafos */
+    text-align: left;
+}
+
+
+.caixa-valquiria {
+    width: 30vw;
+    min-height: 20vh;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .img-valquiria {
-    width: 300px;
+    width: 50%;
     height: auto;
     border-radius: 20px;
-    margin-right: 50px;
+}
+
+
+.paragrafo-valquiria-titulo {
+    position: absolute;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 445px;
+    margin-left: -170px;
+    padding: 20px;
+    height: 7vh;
+    border-radius: 14px;
+    background-color: #eee9e9cc;
+    opacity: 0.9;
 }
