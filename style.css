@@ -134,7 +134,7 @@
 .button-orçamento {
     position: absolute;
     bottom: 30px;
-    left: 97px;
+    left: 186px;
     background-color: #8b4d3b;
     color: #fffbf6;
     border: none;
@@ -143,24 +143,7 @@
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 15px;
     font-weight: bold;
-    cursor: pointer;
-    z-index: 1;
-}
-
-
-.button-whatsapp {
-    position: absolute;
-    bottom: 30px;
-    right: 110px;
-    width: 130px;
-    background-color: #f5e9dd;
-    color: #5c3c33;
-    border: 1px solid #f59f87;
-    padding: 13px;
-    border-radius: 22px;
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-size: 15px;
-    font-weight: bold;
+    text-decoration: none;
     cursor: pointer;
     z-index: 1;
 }
@@ -395,7 +378,6 @@
 }
 
 .caixa-sobre {
-    
     padding: 30px;
     width: 60vw;
     height: 44vh;
@@ -408,6 +390,19 @@
 }
 
 
+.caixa-sobre-2 {
+    padding: 30px;
+    width: 50vw;
+    height: 44vh;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;      /* empilha título e parágrafos */
+    justify-content: center;     /* desce o conteúdo para o centro vertical */
+    gap: 25px;
+    align-items: flex-start;     /* alinha texto à esquerda */
+    box-sizing: border-box;
+}
+
 .titulo-sobre {
     font-family: 'Libre Caslon Text', serif;
     font-size: 23px;
@@ -416,12 +411,45 @@
 }
 
 
-.paragrafo-sobre {
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-size: 17px;
+.titulo-sobre-2 {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 30px;
+    font-weight: normal;
     color: #5c3c33;
-    margin-top: 10px;            /* espaçamento entre parágrafos */
+    margin-top: 20px;           /* espaçamento entre os títulos */
+}
+
+
+.paragrafo-sobre-2 {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 20px;
+    color: #5c3c33;
+    top: 0px;            /* espaçamento entre parágrafos */
     text-align: left;
+}
+
+
+
+.caixa-experiencia {
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 28px;
+}
+
+
+.paragrafo-experiencia {
+    position: absolute;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 45px;
+    color: #5c3c33;
+    margin-top: -47px;            /* espaçamento entre parágrafos */
+    text-align: left;
+    font-weight: normal;
+}
+
+
+.quebra-linha {
+    color: #5c3c33;
 }
 
 
@@ -455,4 +483,57 @@
     border-radius: 14px;
     background-color: #eee9e9cc;
     opacity: 0.9;
+}
+
+
+.container-4 {
+    display: flex;               /* posiciona filhos lado a lado */
+    gap: 30px;                  /* espaço entre as caixas */
+    padding: 50px;
+    margin-top: 20px;
+    justify-content: flex-start; /* alinha à esquerda */
+    align-items: center;
+    background-color: #ebedf0;
+}
+
+
+.titulo-rodape {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: #5c3c33;
+    margin-top: 50px;
+    margin-bottom: -30px;
+    margin-left: 55px;
+}
+
+.paragrafo-rodape {
+    margin-top: 50px;
+    margin-left: 55px;
+}
+
+
+.links-rodape {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    margin-left: 1400px;
+    flex-direction: column;
+
+}
+
+
+.icone-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    background-color: #25d366;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+    cursor: pointer;
 }
