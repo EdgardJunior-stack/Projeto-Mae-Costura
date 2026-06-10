@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
+    
     <title>Mãe Costura</title>
 </head>
 
@@ -18,15 +19,22 @@
 
     <main class="main-principal">
 
-        <section class="container-1">
+        <section class="container-1" id="inicio">
             <header class="cabecalho">
                 <h1>MÃE COSTURA</h1>
-                <div class="linha">
-                    <a>Inicio</a>
-                    <a>Serviços</a>
-                    <a>Sobre</a>
-                    <a class="button-contato" href="https://wa.me/5519981436193?text=Ol%C3%A1%2C%20gostaria%20de%20um%20ajuste%20na%20minha%20roupa!%20%F0%9F%A7%B5" target="_blank">WhatsApp</a>
-                </div>
+                <button class="hamburger" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="linha nav-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#sobre">Sobre</a>
+                    <a class="button-contato"
+                        href="https://wa.me/5519981436193?text=Ol%C3%A1%2C%20gostaria%20de%20um%20ajuste%20na%20minha%20roupa!%20%F0%9F%A7%B5"
+                        target="_blank">WhatsApp</a>
+                </nav>
             </header>
             <img class="img-background" src="./img/Background Costura.png" alt="imagem de fundo">
         </section>
@@ -38,12 +46,14 @@
             <p class="paragrafo-texto-2">Ajustes, reformas e peças personalizadas com qualidade artesanal. Elevando o
                 padrão do seu vestuário
                 com precisão e cuidado em cada ponto.</p>
-            <a class="button-orçamento" href="https://wa.me/5519981436193?text=Ol%C3%A1%2C%20gostaria%20de%20um%20ajuste%20na%20minha%20roupa!%20%F0%9F%A7%B5" target="_blank">Solicitar Orçamento</a>
+            <a class="button-orçamento"
+                href="https://wa.me/5519981436193?text=Ol%C3%A1%2C%20gostaria%20de%20um%20ajuste%20na%20minha%20roupa!%20%F0%9F%A7%B5"
+                target="_blank">Solicitar Orçamento</a>
         </section>
 
 
 
-        <section class="container-2">
+        <section class="container-2" id="servicos">
             <div class="caixa-servicos">
                 <h2>Serviços</h2>
                 <p class="paragrafo-servicos">Atenção meticulosa em cada detalhe</p>
@@ -81,7 +91,7 @@
 
 
 
-        <section class="container-3">
+        <section class="container-3" id="sobre">
             <div class="caixa-sobre">
 
                 <div class="caixa-sobre-2">
@@ -119,23 +129,27 @@
             <footer class="rodape">
                 <h2 class="titulo-rodape">MÃE COSTURA</h2>
                 <p class="paragrafo-rodape">© 2024 Mãe Costura. Todos os direitos reservados.</p>
-                    <div class="links-rodape">
+                <div class="links-rodape">
                     <a href="#">Política de Privacidade</a>
                     <a href="#">Termos de Serviço</a>
-                    </div>
+                </div>
             </footer>
 
-        <div>
-            <a href="https://wa.me/5519981436193?text=Ol%C3%A1%2C%20gostaria%20de%20um%20ajuste%20na%20minha%20roupa!%20%F0%9F%A7%B5" target="_blank" class="link-whatsapp">
-                <img class="icone-whatsapp" src="./img/whatsapp.png" alt="ícone do WhatsApp">
-            </a>
-                
-        </div>
+            <div>
+                <a href="https://wa.me/5519981436193?text=Ol%C3%A1%2C%20gostaria%20de%20um%20ajuste%20na%20minha%20roupa!%20%F0%9F%A7%B5"
+                    target="_blank" class="link-whatsapp">
+                    <img class="icone-whatsapp" src="./img/whatsapp.png" alt="ícone do WhatsApp">
+                </a>
+
+            </div>
 
         </section>
 
 
     </main>
+    
 </body>
-
+     <body>
+        <script src="script.js" defer></script>
+     </body>
 </html>

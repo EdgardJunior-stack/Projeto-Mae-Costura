@@ -33,6 +33,43 @@
     z-index: 2;
 }
 
+/* Menu hamburger */
+.hamburger {
+    display: none;
+    background: transparent;
+    border: none;
+    width: 44px;
+    height: 36px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    padding: 6px;
+}
+.hamburger span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: #5c3c33;
+    border-radius: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Classe aplicada no cabeçalho quando o menu móvel está aberto */
+.cabecalho.nav-open .nav-links {
+    display: flex;
+}
+
+/* Espaçamento para seções quando o cabeçalho está fixo ao usar âncoras */
+section[id] {
+    scroll-margin-top: var(--scroll-offset, 90px);
+}
+
 
 
 .linha {
@@ -257,6 +294,282 @@
     font-weight: normal;
     font-family: 'Libre Caslon Text', serif;
     margin: 0;
+}
+
+/* Responsividade para tablets e celulares */
+@media only screen and (max-width: 1024px) {
+    .cabecalho {
+        position: fixed;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px 16px;
+    }
+
+    /* Mostrar hamburger em telas menores e esconder menu até aberto */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f8f9fa;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 0;
+    }
+
+    .cabecalho.nav-open .nav-links {
+        display: flex;
+    }
+
+    .cabecalho h1 {
+        margin: 0;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .linha {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .cabecalho a {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .button-contato {
+        margin: 0;
+        width: auto;
+        padding: 8px 16px;
+    }
+
+    .img-background {
+        margin-top: 0;
+    }
+
+    .caixa-texto {
+        width: min(90%, 500px);
+        margin: 140px auto 24px;
+        padding: 30px 20px;
+        min-height: auto;
+    }
+
+    .button-atendimento,
+    .paragrafo-texto-1,
+    .paragrafo-texto-2,
+    .button-orçamento {
+        position: static;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        width: 100%;
+    }
+
+    .button-atendimento {
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .paragrafo-texto-1 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .paragrafo-texto-2 {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .button-orçamento {
+        margin-top: 24px;
+        padding: 14px;
+        border-radius: 20px;
+    }
+
+    .container-2 {
+        margin-top: 40px;
+        padding: 40px 16px 24px;
+    }
+
+    .caixa-servicos {
+        margin: 0 auto 24px;
+        width: min(90%, 700px);
+    }
+
+    .container-2 h2,
+    .paragrafo-servicos,
+    .caixa-servicos p {
+        position: static;
+        left: auto;
+        margin: 0;
+    }
+
+    .container-2 h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .paragrafo-servicos,
+    .caixa-servicos p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .caixa-ajustes {
+        margin: 24px auto;
+        width: min(90%, 700px);
+        height: auto;
+    }
+
+    .img-ajustes {
+        position: static;
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .caixa-titulo {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .titulo-ajustes {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cabecalho {
+        padding: 14px 12px;
+    }
+
+    .cabecalho h1 {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .linha {
+        gap: 8px;
+    }
+
+    .cabecalho a {
+        font-size: 14px;
+    }
+
+    .caixa-texto {
+        width: 92%;
+        margin-top: 130px;
+        padding: 24px 18px;
+    }
+
+    .button-atendimento {
+        width: auto;
+        align-self: flex-start;
+    }
+
+    .button-orçamento {
+        width: 100%;
+    }
+
+    .container-2 {
+        padding: 28px 12px;
+    }
+
+    .caixa-bainha,
+    .caixa-sob-medida,
+    .caixa-sobre,
+    .caixa-valquiria,
+    .caixa-sobre-2,
+    .caixa-experiencia {
+        width: 92%;
+        margin: 16px auto;
+    }
+
+    .img-valquiria {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .rodape {
+        padding: 20px 12px;
+        text-align: center;
+    }
+
+    .links-rodape {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 14px;
+    }
+
+    .links-rodape a {
+        font-size: 14px;
+    }
+
+    .link-whatsapp {
+        right: 16px;
+        bottom: 16px;
+        position: fixed;
+        z-index: 5;
+    }
+
+    .icone-whatsapp {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .caixa-texto {
+        margin-top: 120px;
+        padding: 20px 16px;
+    }
+
+    .button-atendimento {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .paragrafo-texto-1 {
+        font-size: 18px;
+    }
+
+    .button-orçamento {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .container-2 {
+        padding: 20px 10px;
+    }
+
+    .container-2 h2 {
+        font-size: 24px;
+    }
+
+    .paragrafo-servicos,
+    .caixa-servicos p {
+        font-size: 15px;
+    }
 }
 
 
