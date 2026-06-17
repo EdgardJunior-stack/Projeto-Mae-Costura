@@ -36,11 +36,13 @@
                         target="_blank">WhatsApp</a>
                 </nav>
             </header>
-            <img class="img-background" src="./img/Background Costura.png" alt="imagem de fundo">
+            <div id="parallax_placeholder" class="parallax-placeholder">
+                <img class="img-background" src="./img/Background Costura.png" alt="imagem de fundo">
+            </div>
         </section>
 
 
-        <section class="caixa-texto">
+        <section class="caixa-texto parallax-item reveal" data-parallax-speed="0.10">
             <button class="button-atendimento">• Atendimento Exclusivo</button>
             <p class="paragrafo-texto-1">Costura sob medida com acabamento profissional</p>
             <p class="paragrafo-texto-2">Ajustes, reformas e peças personalizadas com qualidade artesanal. Elevando o
@@ -54,36 +56,32 @@
 
 
         <section class="container-2" id="servicos">
-            <div class="caixa-servicos">
+            <div class="caixa-servicos parallax-item reveal" data-parallax-speed="0.08">
                 <h2>Serviços</h2>
                 <p class="paragrafo-servicos">Atenção meticulosa em cada detalhe</p>
             </div>
 
-
-
-            <div class="caixa-ajustes">
-                <img class="img-ajustes" src="./img/Manequim.png" alt="imagem-manequim">
-                <div class="caixa-titulo">
-                    <img class="icone-cabide" src="./img/cabide-de-toalha.png" alt="ícone de cabide">
-                    <h3 class="titulo-ajustes">Ajustes</h3>
-                    <p class="paragrafo-ajuste">Aperfeiçoando o caimento das suas peças de roupa prontas para usar.</p>
+            <div class="servicos-grid">
+                <div class="caixa-ajustes parallax-item reveal" data-parallax-speed="0.12">
+                    <img class="img-ajustes" src="./img/Manequim.png" alt="imagem-manequim">
+                    <div class="caixa-titulo">
+                        <img class="icone-cabide" src="./img/cabide-de-toalha.png" alt="ícone de cabide">
+                        <h3 class="titulo-ajustes">Ajustes</h3>
+                        <p class="paragrafo-ajuste">Aperfeiçoando o caimento das suas peças de roupa prontas para usar.</p>
+                    </div>
                 </div>
-            </div>
 
+                <div class="caixa-bainha parallax-item reveal" data-parallax-speed="0.10">
+                    <img class="icone-tesoura" src="./img/Icone Tesoura.png" alt="ícone de tesoura">
+                    <h3 class="titulo-bainha">Bainha</h3>
+                    <p class="paragrafo-bainha">Ajustes precisos de comprimento para calças, saias, ternos, shorts.</p>
+                </div>
 
-
-            <div class="caixa-bainha">
-                <img class="icone-tesoura" src="./img/Icone Tesoura.png" alt="ícone de tesoura">
-                <h3 class="titulo-bainha">Bainha</h3>
-                <p class="paragrafo-bainha">Ajustes precisos de comprimento para calças, saias, ternos, shorts.</p>
-            </div>
-
-
-
-            <div class="caixa-sob-medida">
-                <img class="icone-regua" src="./img/Icone Regua.png" alt="ícone de régua">
-                <h3 class="titulo-sob-medida">Vestidos sob medida</h3>
-                <p class="paragrafo-sob-medida">Criações personalizadas, perfeitamente adaptadas à sua silhueta.</p>
+                <div class="caixa-sob-medida parallax-item reveal" data-parallax-speed="0.10">
+                    <img class="icone-regua" src="./img/Icone Regua.png" alt="ícone de régua">
+                    <h3 class="titulo-sob-medida">Vestidos sob medida</h3>
+                    <p class="paragrafo-sob-medida">Criações personalizadas, perfeitamente adaptadas à sua silhueta.</p>
+                </div>
             </div>
         </section>
 
@@ -92,8 +90,7 @@
 
 
         <section class="container-3" id="sobre">
-            <div class="caixa-sobre">
-
+            <div class="caixa-sobre parallax-item reveal" data-parallax-speed="0.12">
                 <div class="caixa-sobre-2">
                     <h2 class="titulo-sobre-2">Sobre a Artesã</h2>
                     <p class="paragrafo-sobre-2">Com mais de 20 anos de experiência em alta costura, eu, Valquíria,
@@ -106,22 +103,17 @@
                         esteja impecável, como também resista ao teste do tempo.</p>
                 </div>
 
-                <div class="caixa-experiencia">
-                    <p class="paragrafo-experiencia">|20+</p>
-                    <br class="quebra-linha">ANOS DE EXPERIÊNCIA</br>
+                <div class="caixa-valquiria">
+                    <img class="img-valquiria" src="./img/A costureira.jpg" alt="Valquíria, a costureira">
+                    <div class="paragrafo-valquiria-titulo">
+                        <p class="paragrafo-valquiria">"Cada ponto é uma promessa de qualidade."</p>
+                    </div>
                 </div>
-
             </div>
 
-            <div class="caixa-valquiria">
-                <img class="img-valquiria" src="./img/A costureira.jpg" alt="Valquíria, a costureira">
-
-                <div class="paragrafo-valquiria-titulo">
-                    <p class="paragrafo-valquiria">"Cada ponto é uma promessa de qualidade."</p>
-                </div>
-
-            </div>
-
+            <div class="caixa-experiencia parallax-item reveal" data-parallax-speed="0.08">
+                <p class="paragrafo-experiencia">|20+</p>
+                <p class="quebra-linha">ANOS DE EXPERIÊNCIA</p>
             </div>
         </section>
 
@@ -147,9 +139,6 @@
 
 
     </main>
-    
+    <script src="script.js" defer></script>
 </body>
-     <body>
-        <script src="script.js" defer></script>
-     </body>
 </html>
